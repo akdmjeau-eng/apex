@@ -1,14 +1,13 @@
 import sys
 import warnings
 import os
+import torch
 import threading
 import glob
 from packaging.version import parse, Version
 
-from setuptools import setup, find_packages
-import subprocess
+from setuptools, find_packages
 
-import torch
 from torch.utils.cpp_extension import (
     BuildExtension,
     CppExtension,
